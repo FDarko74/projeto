@@ -153,6 +153,14 @@ footer {
   }
   .escuro {
     --bg-url: url(./assets/assets/bg-mobile.jpg);
+    --text-color: rgba(255, 255, 255, 0.942);
+    --bg-color: rgba(29, 47, 69, 0.041);
+    --bg-color2: rgba(62, 65, 68, 0.46);
+    --bg-color2h: rgb(44, 45, 46);
+    --bor-color: rgba(0, 0, 0, 0.279);
+    --bor-colorh: rgba(40, 42, 44, 0.644);
+    --switch-bg: url(./assets/assets/moon-stars.svg);
+    --switch-bgc: rgb(100, 100, 104);
   }
 }
 
