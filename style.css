@@ -78,6 +78,10 @@ body * {
   z-index: 1;
   transform: translateY(-50%);
   transition: all 0.3s;
+  animation: slide-out 0.5s;
+}
+#switch button:hover {
+  outline: 8px solid var(--bg-color2h);
 }
 #switch span {
   display: block;
@@ -89,8 +93,7 @@ body * {
   border-radius: 9999px;
 }
 .escuro #switch button {
-  left: initial;
-  right: 0;
+  animation: slide-in 0.5s forwards;
 }
 ul {
   list-style: none;
@@ -150,5 +153,22 @@ footer {
   }
   .escuro {
     --bg-url: url(./assets/assets/bg-mobile.jpg);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
