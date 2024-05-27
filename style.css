@@ -5,7 +5,7 @@
 }
 :root {
   --text-color: white;
-  --bg-url: url(./assets/assets/Desktop.jpg);
+  --bg-url: url(./assets/assets/bg-desktop-light.jpg);
   --bg-color: rgba(255, 255, 255, 0);
   --bg-color2: rgba(0, 0, 0, 0.304);
   --bg-color2h: rgba(0, 0, 0, 0.542);
@@ -16,7 +16,7 @@
 }
 .escuro {
   --text-color: rgb(145, 212, 251);
-  --bg-url: url(./assets/assets/vista-do-barco-na-agua-a-noite.jpg);
+  --bg-url: url(./assets/assets/bg-desktop.jpg);
   --bg-color: rgba(29, 47, 69, 0.041);
   --bg-color2: rgba(9, 30, 61, 0.46);
   --bg-color2h: rgb(70, 101, 118);
@@ -32,6 +32,7 @@ body {
   background-repeat: no-repeat; /*Faz com que não se repita*/
   background-position: top center; /*mantem ela no centro da tela. Nos limites do eixo y e no meio do eixo x*/
   background-size: cover; /*Cobre a tela com a imagem*/
+  height: 100vh;
 }
 body * {
   font-family: "Merriweather", serif;
@@ -39,7 +40,7 @@ body * {
 }
 #Tela {
   width: 100%;
-  max-width: 588px;
+  max-width: 659px;
   margin: 56px auto 0px;
   background-color: var(--bg-color);
   backdrop-filter: blur(5px);
@@ -141,4 +142,13 @@ footer {
   text-align: center;
   padding: 0px 0px 24px;
   font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  :root {
+    --bg-url: url(./assets/assets/bg-mobile-light.jpg);
+  }
+  .escuro {
+    --bg-url: url(./assets/assets/bg-mobile.jpg);
+  }
 }
